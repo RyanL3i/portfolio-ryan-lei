@@ -16,7 +16,7 @@ const AllProjects = () => {
             <nav className="bg-slate-700 fixed w-full z-50">
                 <div className="h-10vh flex justify-between z-50 text-white lg:py-5 px-20 py-4 flex-1 border-b-2 border-slate-500 ">
                     <div className="flex items-center flex-1">
-                        <span className="text-2xl font-bold">portfolio-ryan-lei/projects %</span>
+                        <span className="text-2xl font-bold">/projects %</span>
                     </div>
                     <div className="flex justify-end items-center">
                         <Link to="/">

@@ -14,7 +14,7 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div className="bg-slate-800">
+    <div className="bg-slate-800 overflow-x-hidden overflow-y-hidden">
       <ScrollToTop/>
       <Navbar/>
       <Welcome/>
