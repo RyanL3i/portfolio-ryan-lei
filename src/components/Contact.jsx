@@ -2,8 +2,8 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div id="Contact" className="p-4 lg:p-20 flex flex-col items-center justify-center">
-      <h1 data-aos="fade-left" className="text-[52px] font-semibold mb-20 uppercase text-teal-300 leading-normal">Contact Me</h1>
+    <div id="Contact" className="pt-24 md:pt-12 p-8 lg:p-20 flex flex-col items-center justify-center">
+      <h1 data-aos="fade-left" className="text-[52px] font-semibold mb-4 md:mb-20 uppercase text-teal-300 leading-normal">Contact Me</h1>
       <form action="" className="flex flex-col gap-2 lg:w-1/2">
         <div className="lg:flex gap-9">
           <input data-aos="flip-up" className="w-full lg:my-3 my-4 rounded-lg bg-slate-800 p-4 border-2 border-teal-300 b_glow text-xl text-slate-400"

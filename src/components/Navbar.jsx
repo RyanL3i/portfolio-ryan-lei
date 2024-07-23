@@ -14,7 +14,7 @@ const Navbar = () => {
     <div className="lg:hidden block absolute top-16 w-full left-0 right-9 bg-slate-600 transition">
       <ul className="text-center text-xl">
         <Link spy={true} smooth={true} to="Home"> 
-          <li className="my-4 py-4 border-b border-slate-600 hover:bg-slate-800 hover:text-teal-300 hover:rounded">Home</li>
+          <li className="my-4 py-4 border-b border-slate-700 hover:bg-slate-800 hover:text-teal-300 hover:rounded">Home</li>
         </Link>
         <Link spy={true} smooth={true} to="About">
           <li className="my-4 py-4 border-b border-slate-700 hover:bg-slate-800 hover:text-teal-300 hover:rounded">About</li>
@@ -30,9 +30,11 @@ const Navbar = () => {
   </>
   return (
     <nav className="bg-slate-700 fixed w-full z-50">
-      <div className="h-10vh flex justify-between z-50 text-white lg:py-5 px-20 py-4 flex-1 border-b-2 border-slate-500">
+      <div className="h-10vh flex justify-between z-50 text-white lg:py-5 px-8 md:px-20 py-4 flex-1 border-b-2 border-slate-500">
         <div className="flex items-center flex-1"> 
-          <span className="text-2xl font-extrabold">portfolio-ryan-lei %</span>
+          <Link spy={true} smooth={true} to="Home">
+            <span className="text-2xl font-extrabold cursor-pointer">/portfolio-ryan %</span>
+          </Link>
         </div>
         <div className=" lg:flex md:flex lg:flex-1 items-center justify-end font-normal hidden">
           <div className="flex-10">
