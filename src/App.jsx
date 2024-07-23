@@ -1,14 +1,14 @@
 import React from 'react'
 import {
   Route,
-  createHashRouter,
+  createBrowserRouter,
   createRoutesFromElements,
   RouterProvider
 } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import AllProjects from './pages/AllProjects';
 
-const router = createHashRouter(
+const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
       <Route index element={<HomePage />} /> 
