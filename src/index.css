@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.glow {
+    transition: all 0.3s ease-in-out;
+}
+
+.glow:hover {
+    box-shadow: 0 0 25px rgb(94, 234, 212);
+}
+
+.img_glow {
+    box-shadow: 0 0 90px rgb(94, 234, 212);
+}
+
+.neon-button {
+    transform: all 0.3s ease-in-out;
+}
+
+.neon-button:hover {
+    box-shadow: 0 0 15px rgb(94, 234, 212);
+}
+
+.b_glow {
+    box-shadow: 0 0 45px rgb(94, 234, 212);
+}
