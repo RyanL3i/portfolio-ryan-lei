@@ -32,11 +32,11 @@ const Navbar = () => {
     <nav className="bg-slate-700 fixed w-full z-50">
       <div className="h-10vh flex justify-between z-50 text-white lg:py-5 px-20 py-4 flex-1 border-b-2 border-slate-500">
         <div className="flex items-center flex-1"> 
-          <span className="text-2xl font-bold">portfolio-ryan-lei %</span>
+          <span className="text-2xl font-extrabold">portfolio-ryan-lei %</span>
         </div>
         <div className=" lg:flex md:flex lg:flex-1 items-center justify-end font-normal hidden">
           <div className="flex-10">
-            <ul className="flex gap-8 mr-16 text-[18px]">
+            <ul className="flex gap-8 mr-16 text-[18px] font-semibold">
               <Link spy={true} smooth={true} to="Home">
                 <li className="hover:text-teal-300 transition border-b-2 border-slate-700 hover:border-teal-300 cursor-pointer">Home</li>
               </Link>

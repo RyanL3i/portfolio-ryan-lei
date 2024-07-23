@@ -1,14 +1,16 @@
 import React from 'react';
 import Projects from '../components/Projects';
-import ScrollToTop from './ScrollToTop';
+import ScrollToTop from './ScrollToTop.jsx';
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
-
+import { IoIosArrowBack } from 'react-icons/io';
+    
 
 const AllProjects = () => {
     useEffect(() => {
-        document.title = 'Ryan Lei-Projects';
-      }, []);
+        document.title="Ryan Lei-Projects"
+    , []})
+   
     return (
         <>
             <nav className="bg-slate-700 fixed w-full z-50">
@@ -16,11 +18,11 @@ const AllProjects = () => {
                     <div className="flex items-center flex-1">
                         <span className="text-2xl font-bold">portfolio-ryan-lei/projects %</span>
                     </div>
-                    <div className="flex justify-end items-center mb-12">
+                    <div className="flex justify-end items-center">
                         <Link to="/">
-                            <button className="neon-button shadow-2xl hover:shadow-teal-300/50 text-white border-2 hover:bg-teal-300 hover:text-slate-800
-                             border-teal-300 rounded-lg py-4 px-4 uppercase relative overflow-hidden mt-12 font-bold">
-                                Back To Homepage
+                            <button className="flex flex-row items-center neon-button text-xs shadow-2xl hover:shadow-teal-300/50 text-white border-2 hover:bg-teal-300
+                             hover:text-slate-800 border-teal-300 rounded-lg py-2 px-4 uppercase relative overflow-hidden font-bold">
+                                <IoIosArrowBack className="mr-1"/>Back
                             </button>
                         </Link>
                     </div>

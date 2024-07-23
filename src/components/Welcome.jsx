@@ -1,11 +1,11 @@
-
+import Gallery from './Gallery';
 import { AiFillGithub } from 'react-icons/ai';
 import { FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 import { IoIosMail } from 'react-icons/io';
-import homeImage from '../assets/PianoPlaying.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+
 
 
 const Welcome = () => {
@@ -23,28 +23,32 @@ const Welcome = () => {
                 <h1 data-aos="fade-right" className="text-[54px] font-semibold mb-8 leading-normal"> Hi! My name is <span className="text-teal-300">Ryan Lei</span>
                 </h1>
                 <p data-aos="fade-left">Hello! I'm Ryan Lei, a current software developer for TunePad. I am interested in creating modern, innovative, yet creative solutions to everyday problems.
-                    At Northwestern University, I am studying Computer Science but simultaneously pursuing certificate programs in Economics and Finance.
+                    At Northwestern University, I am studying Computer Science but simultaneously pursuing certificate programs in Economics and Finance. In terms of future career
+                    aspirations, I look to work at the intersection of both technology and entrepreneurship.
                 </p>
-                <div data-aos="fade-left" className="flex mt-8 gap-2"> 
+                <div data-aos="fade-left" className="flex mt-8 gap-2">
                     <div className="flex items-center justify-center">
                         <div className="flex space-x-2">
-                            <a href="" className="text-teal-300 hover:text-fuchisia-500 rounded-full glow p-2">
-                                <AiFillGithub className="text-[28px]"/>
+                            <a href="https://github.com/RyanL3i" target="_blank" className="text-teal-300 hover:text-fuchisia-500 rounded-full glow p-2">
+                                <AiFillGithub className="text-[28px]" />
+                            </a>
+                            <a href="https://www.linkedin.com/in/ryan-lei-a12835253/" target="_blank" className="text-teal-300 hover:text-fuchisia-500 rounded-full glow p-2">
+                                <FaLinkedinIn className="text-[28px]" />
+                            </a>
+                            <a href="https://www.instagram.com/ryanl3i/" target="_blank" className="text-teal-300 hover:text-fuchisia-500 rounded-full glow p-2">
+                                <FaInstagram className="text-[28px]" />
                             </a>
                             <a href="" className="text-teal-300 hover:text-fuchisia-500 rounded-full glow p-2">
-                                <FaLinkedinIn className="text-[28px]"/>
-                            </a>
-                            <a href="" className="text-teal-300 hover:text-fuchisia-500 rounded-full glow p-2">
-                                <FaInstagram className="text-[28px]"/>
-                            </a>
-                            <a href="" className="text-teal-300 hover:text-fuchisia-500 rounded-full glow p-2">
-                                <IoIosMail className="text-[28px]"/>
+                                <IoIosMail className="text-[28px]" />
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <img data-aos="fade-up" src={homeImage} width={350} height={350} className="rounded-3xl border-2 border-teal-300 img_glow" alt="Display Photo: Me playing piano"/>
+            <div>
+                <Gallery/>
+            </div>
+            {/*<img data-aos="fade-up" src={sidePiano} width={350} height={350} className="rounded-3xl border-2 border-teal-300 img_glow" alt="Display Photo: Me playing piano" />*/}
         </div>
     )
 }

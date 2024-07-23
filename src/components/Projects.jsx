@@ -1,5 +1,8 @@
 import React from 'react';
-import sample from '../assets/PianoPlaying.png';
+import CTA from '../assets/CTALogo.svg';
+import KCal from '../assets/KCal.png';
+import LetterR from '../assets/LetterR.png';
+import Tunepad from '../assets/TunepadLogo.png';
 import Project from './Project';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -8,40 +11,42 @@ const Projects = ({onHomePage }) => {
     const projects = [
         {
             title: "Personal Portfolio",
-            description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
-            imageLink: sample,
-            externalUrl: `https://github.com/RyanL3i/calorie-calculator`
+            description: `The website you are currently viewing, made to offer a glimpse into myself as a professional, 
+            a student, and a human. Built using React, Vite, and Tailwind CSS.`,
+            imageLink: LetterR,
+            hasWebsite: true,
+            websiteUrl: "",
+            githubUrl: `https://github.com/RyanL3i/calorie-calculator`
+            
         },
         {
             title: "TunePad",
-            description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. `,
-            imageLink: sample,
-            externalUrl: `https://github.com/RyanL3i/calorie-calculator`
+            description: `Contributed to TunePad, a learning platform developed by Northwestern professors to teach
+            music and python simultaneously. Submitted code for an adminstrative page built in React and Tailwind CSS.
+            Contributed music/coding tutorials constructed in Python, as well as interactives for students to use.`,
+            imageLink: Tunepad,
+            hasWebsite: true,
+            websiteUrl: "https://tunepad.com/",
+            githubUrl: `https://github.com/RyanL3i/calorie-calculator`
+        },
+        {
+            title: "Northwestern Bus Predictor",
+            description: `A small application that routes a user towards the nearest bus stop based on their location
+            on campus, and includes ETA's for campus buses. Built with C/C++, and using data taken from the
+            Chicago Transit Authority public API.`,
+            imageLink: CTA,
+            hasWebsite: false,
+            websiteUrl: "",
+            githubUrl: `https://github.com/RyanL3i/calorie-calculator`
         },
         {
             title: "Calorie Recommender",
-            description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea co`,
-            imageLink: sample,
-            externalUrl: `https://github.com/RyanL3i/calorie-calculator`
-        },
-        {
-            title: "test 1",
-            description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea co`,
-            imageLink: sample,
-            externalUrl: `https://github.com/RyanL3i/calorie-calculator`
-        },
-        {
-            title: "test 2",
-            description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea co`,
-            imageLink: sample,
-            externalUrl: `https://github.com/RyanL3i/calorie-calculator`
+            description: `A small-scale project constructed to help my friends with figuring out how many calories they
+            should be eating. Served as my introduction to React.`,
+            imageLink: KCal,
+            hasWebsite: true,
+            websiteUrl: "https://ryanl3i.github.io/calorie-calculator/",
+            githubUrl: `https://github.com/RyanL3i/calorie-calculator`
         },
     ];
 
@@ -57,11 +62,11 @@ const Projects = ({onHomePage }) => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {onHomePage ? projects.slice(0, 3).map((project, index) => (
                     <div key={index} className="shadow-lg rounded-lg overflow-hidden mt-2 flex flex-col">
-                        <Project project={project} aosProject={onHomePage} />
+                        <Project project={project} aosProject={onHomePage} hasWebsite={project.hasWebsite} />
                     </div>))
                     : projects.map((project, index) => (
                         <div key={index} className="shadow-lg rounded-lg overflow-hidden mt-2 flex flex-col">
-                            <Project project={project} aosProject={onHomePage} />
+                            <Project project={project} aosProject={onHomePage} hasWebsite={project.hasWebsite} />
                         </div>
                     ))
                 }
