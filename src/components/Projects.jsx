@@ -15,8 +15,8 @@ const Projects = ({onHomePage }) => {
             a student, and a human. Built using React, Vite, and Tailwind CSS.`,
             imageLink: LetterR,
             hasWebsite: true,
-            websiteUrl: "",
-            githubUrl: `https://github.com/RyanL3i/calorie-calculator`
+            websiteUrl: "https://ryanlei.me",
+            githubUrl: `https://github.com/RyanL3i/portfolio-ryan-lei`
             
         },
         {
@@ -27,7 +27,7 @@ const Projects = ({onHomePage }) => {
             imageLink: Tunepad,
             hasWebsite: true,
             websiteUrl: "https://tunepad.com/",
-            githubUrl: `https://github.com/RyanL3i/calorie-calculator`
+            githubUrl: `https://github.com/RyanL3i`
         },
         {
             title: "Northwestern Bus Predictor",
@@ -37,7 +37,7 @@ const Projects = ({onHomePage }) => {
             imageLink: CTA,
             hasWebsite: false,
             websiteUrl: "",
-            githubUrl: `https://github.com/RyanL3i/calorie-calculator`
+            githubUrl: `https://github.com/RyanL3i/nu-bus-stops`
         },
         {
             title: "Calorie Recommender",

@@ -38,7 +38,7 @@ const Welcome = () => {
                             <a href="https://www.instagram.com/ryanl3i/" target="_blank" className="text-teal-300 hover:text-fuchisia-500 rounded-full glow p-2">
                                 <FaInstagram className="text-[28px]" />
                             </a>
-                            <a href="" className="text-teal-300 hover:text-fuchisia-500 rounded-full glow p-2">
+                            <a href="mailto:ryanleiapps@gmail.com" className="text-teal-300 hover:text-fuchisia-500 rounded-full glow p-2">
                                 <IoIosMail className="text-[28px]" />
                             </a>
                         </div>
