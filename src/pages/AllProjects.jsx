@@ -1,5 +1,6 @@
 import React from 'react';
 import Projects from '../components/Projects';
+import Footer from '../components/Footer.jsx';
 import ScrollToTop from './ScrollToTop.jsx';
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
@@ -13,7 +14,7 @@ const AllProjects = () => {
     })
 
     return (
-        <>
+        <div className="overflow-x-hidden overflow-y-hidden">
             <nav className="bg-slate-700 fixed w-full z-50">
                 <div className="h-10vh flex z-50 text-white lg:py-5 px-8 md:px-20 py-4 flex-1 border-b-2 border-slate-500 ">
                     <div className="flex items-center flex-1">
@@ -33,7 +34,8 @@ const AllProjects = () => {
             <div className="bg-slate-800">
                 <Projects onHomePage={false} />
             </div>
-        </>
+            <Footer/>
+        </div>
     )
 }
 

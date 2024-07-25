@@ -21,6 +21,7 @@ const HomePage = () => {
       <AboutMe/>
       <Projects onHomePage={true}/>
       <Contact/>
+      <Footer/>
     </div>
   )
 }

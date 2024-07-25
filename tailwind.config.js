@@ -9,6 +9,9 @@ export default {
       height: {
         '10vh': '10vh',
       },
+      height: {
+        '20vh': '20vh',
+      },
     },
   },
   plugins: [],
