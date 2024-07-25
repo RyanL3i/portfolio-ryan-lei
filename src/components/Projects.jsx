@@ -12,7 +12,7 @@ const Projects = ({onHomePage }) => {
         {
             title: "Personal Portfolio",
             description: `The website you are currently viewing, made to offer a glimpse into myself as a professional, 
-            a student, and a human. Built using React, Vite, and Tailwind CSS.`,
+            a student, and a human. Built using React, Vite, Tailwind CSS, and Firebase.`,
             imageLink: LetterR,
             hasWebsite: true,
             websiteUrl: "https://ryanlei.me",
