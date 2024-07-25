@@ -32,7 +32,7 @@ const Gallery = () => {
     ];
     return (
         <div className=" border-2 border-teal-300 h-80 w-80 img_glow">
-            <ImageGallery items={images} autoPlay={true} showThumbnails={false} showNav={false} slideInterval={1500}/>
+            <ImageGallery items={images} autoPlay={true} showThumbnails={false} showNav={false} slideInterval={2000}/>
         </div>
     )
 }
