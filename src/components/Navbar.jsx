@@ -22,9 +22,9 @@ const Navbar = () => {
         <Link spy={true} smooth={true} to="Projects">
           <li className="my-4 py-4 border-b border-slate-700 hover:bg-slate-800 hover:text-teal-300 hover:rounded">Projects</li>
         </Link>
-        <Link spy={true} smooth={true} to="Contact">
+        {/* <Link spy={true} smooth={true} to="Contact">
           <li className="my-4 py-4 border-b border-slate-700 hover:bg-slate-800 hover:text-teal-300 hover:rounded">Contact</li>
-        </Link>
+        </Link> */}
       </ul>
     </div>
   </>
@@ -48,9 +48,9 @@ const Navbar = () => {
               <Link spy={true} smooth={true} to="Projects">
                 <li className="hover:text-teal-300 transition border-b-2 border-slate-700 hover:border-teal-300 cursor-pointer">Projects</li>
               </Link>
-              <Link spy={true} smooth={true} to="Contact">
+              {/* <Link spy={true} smooth={true} to="Contact">
                 <li className="hover:text-teal-300 transition border-b-2 border-slate-700 hover:border-teal-300 cursor-pointer">Contact</li>
-              </Link>
+              </Link> */}
             </ul>
           </div>
         </div>

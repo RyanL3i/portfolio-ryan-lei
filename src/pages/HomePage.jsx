@@ -20,7 +20,7 @@ const HomePage = () => {
       <Welcome/>
       <AboutMe/>
       <Projects onHomePage={true}/>
-      <Contact/>
+      {/* <Contact/> */}
       <Footer/>
     </div>
   )
