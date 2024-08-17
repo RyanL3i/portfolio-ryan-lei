@@ -27,7 +27,7 @@ const Projects = ({onHomePage }) => {
             imageLink: Tunepad,
             hasWebsite: true,
             websiteUrl: "https://tunepad.com/",
-            githubUrl: `https://github.com/RyanL3i`
+            githubUrl: `https://github.com/RyanL3i/tunepad-admin-page`
         },
         {
             title: "Northwestern Bus Predictor",
