@@ -7,7 +7,7 @@ const AboutMe = () => {
       <img data-aos="fade-down" src={hawaiiFlex} width={350} height={350} className="border-2 border-teal-300 img_glow" alt="Display Photo: Me playing piano" />
       <div className="h-full lg:py-40 flex flex-col justify-center lg:items-start items-center text-white">
         <h1 data-aos="fade-left" className="text-[54px] font-semibold mb-8 leading-normal uppercase text-teal-300">About Me</h1>
-        <p data-aos="fade-right">Besides academics, I love to travel, with Hawaii and Europe are 2 of my favorite destinations. Throughout my life,
+        <p data-aos="fade-right">Besides academics, I love to travel, with Hawaii and Europe being 2 of my favorite destinations. Throughout my life,
           I have worked hard to try and incorporate my love of music and fitness through piano performance and bodybuilding.
           Would always love to chat about movies, TV shows, music, food, or fitness!
         </p>
