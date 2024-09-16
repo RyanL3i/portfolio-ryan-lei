@@ -20,7 +20,7 @@ const Welcome = () => {
     return (
         <div id="Home" className="lg:px-56 px-10 lg:py-0 py-20 text-center gap-5 lg:text-start flex lg:flex-row flex-col-reverse justify-between lg:gap-28 items-center">
             <div className="h-full lg:py-40 flex flex-col justify-center lg:items-start items-center text-white">
-                <h1 data-aos="fade-right" className="text-[54px] font-semibold mb-8 leading-normal"> Hi! My name is <span className="text-teal-300">Ryan Lei</span>
+                <h1 data-aos="fade-right" className="text-[24px] md:text-[54px] font-semibold mb-8 leading-normal"> Hi! My name is <span className="text-teal-300">Ryan Lei</span>
                 </h1>
                 <p data-aos="fade-left">Hello! I'm Ryan Lei, a current software developer for TunePad. I am interested in creating modern, innovative, yet creative solutions to everyday problems.
                     At Northwestern University, I am studying Computer Science but simultaneously pursuing certificate programs in Economics and Finance. In terms of future career

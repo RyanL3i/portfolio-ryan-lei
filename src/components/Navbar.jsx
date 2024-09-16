@@ -1,37 +1,38 @@
 import React from 'react'
-import {useState} from 'react'
+import { useState } from 'react'
 import { Link } from 'react-scroll';
-import {FaTimes} from 'react-icons/fa';
-import{CiMenuFries} from 'react-icons/ci';
+import { FaTimes } from 'react-icons/fa';
+import { CiMenuFries } from 'react-icons/ci';
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => {
     setClick(!click);
   }
-  
+
+
   const shrunkContent = <>
     <div className="lg:hidden block absolute top-16 w-full left-0 right-9 bg-slate-600 transition">
       <ul className="text-center text-xl">
-        <Link spy={true} smooth={true} to="Home"> 
+        <Link spy={true} smooth={true} to="Home" onClick={handleClick}>
           <li className="my-4 py-4 border-b border-slate-700 hover:bg-slate-800 hover:text-teal-300 hover:rounded">Home</li>
         </Link>
-        <Link spy={true} smooth={true} to="About">
+        <Link spy={true} smooth={true} to="About" onClick={handleClick}>
           <li className="my-4 py-4 border-b border-slate-700 hover:bg-slate-800 hover:text-teal-300 hover:rounded">About</li>
         </Link>
-        <Link spy={true} smooth={true} to="Projects">
+        <Link spy={true} smooth={true} to="Projects" onClick={handleClick}>
           <li className="my-4 py-4 border-b border-slate-700 hover:bg-slate-800 hover:text-teal-300 hover:rounded">Projects</li>
         </Link>
-        {/* <Link spy={true} smooth={true} to="Contact">
+        <Link spy={true} smooth={true} to="Contact" onClick={handleClick}>
           <li className="my-4 py-4 border-b border-slate-700 hover:bg-slate-800 hover:text-teal-300 hover:rounded">Contact</li>
-        </Link> */}
+        </Link>
       </ul>
     </div>
   </>
   return (
     <nav className="bg-slate-700 fixed w-full z-50">
       <div className="h-10vh flex justify-between z-50 text-white lg:py-5 px-8 md:px-20 py-4 flex-1 border-b-2 border-slate-500">
-        <div className="flex items-center flex-1"> 
+        <div className="flex items-center flex-1">
           <Link spy={true} smooth={true} to="Home">
             <span className="text-2xl font-extrabold cursor-pointer">/portfolio-ryan %</span>
           </Link>
@@ -44,23 +45,23 @@ const Navbar = () => {
               </Link>
               <Link spy={true} smooth={true} to="About">
                 <li className="hover:text-teal-300 transition border-b-2 border-slate-700 hover:border-teal-300 cursor-pointer">About</li>
-              </Link> 
+              </Link>
               <Link spy={true} smooth={true} to="Projects">
                 <li className="hover:text-teal-300 transition border-b-2 border-slate-700 hover:border-teal-300 cursor-pointer">Projects</li>
               </Link>
-              {/* <Link spy={true} smooth={true} to="Contact">
+              <Link spy={true} smooth={true} to="Contact">
                 <li className="hover:text-teal-300 transition border-b-2 border-slate-700 hover:border-teal-300 cursor-pointer">Contact</li>
-              </Link> */}
+              </Link>
             </ul>
           </div>
         </div>
 
         <div>
-          {click && shrunkContent}  {/* occurs when shrunk */}
+          {click && shrunkContent}  {/* when click is true, shrunk will be render (not boolean, just "if then") */}
         </div>
 
         <button className="block sm:hidden transition" onClick={handleClick}>
-          {click ? <FaTimes/> : <CiMenuFries/>}
+          {click ? <FaTimes /> : <CiMenuFries />}
         </button>
       </div>
     </nav>
