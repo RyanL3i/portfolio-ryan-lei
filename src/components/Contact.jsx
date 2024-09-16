@@ -21,7 +21,7 @@ const Contact = () => {
 
     if (res.success) {
       console.log("Success", res);
-      alert("Form submitted successfully! I'll get back ASAP :)");
+      alert("Form submitted! I'll respond ASAP :)");
       event.target.reset();
     }
 
