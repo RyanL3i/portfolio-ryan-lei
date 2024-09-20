@@ -4,11 +4,22 @@ import KCal from '../assets/KCal.png';
 import LetterR from '../assets/LetterR.png';
 import Tunepad from '../assets/TunepadLogo.png';
 import Project from './Project';
+import Football from '../assets/Football.jpg'
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Projects = ({onHomePage }) => {
     const projects = [
+        {
+            title: "Who2Start",
+            description: `A tool I built to help NFL Fantasy Football fans view statistics/odds for their entire team, all in one place.
+            Backend data scraped and sorted via Beautiful Soup and Python/Flask, frontend powered by React and Tailwind CSS.`,
+            imageLink: Football,
+            hasWebsite: false,
+            websiteUrl: "",
+            githubUrl: `https://github.com/RyanL3i/fantasy-scraper`
+            
+        },
         {
             title: "Personal Portfolio",
             description: `The website you are currently viewing, made to offer a glimpse into myself as a professional, 

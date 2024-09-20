@@ -9,7 +9,7 @@ const AboutMe = () => {
         <h1 data-aos="fade-left" className="text-[54px] font-semibold mb-8 leading-normal uppercase text-teal-300">About Me</h1>
         <p data-aos="fade-right">Besides academics, I love to travel, with Hawaii and Europe being 2 of my favorite destinations. Throughout my life,
           I have worked hard to try and incorporate my love of music and fitness through piano performance and bodybuilding.
-          Would always love to chat about movies, TV shows, music, food, or fitness!
+          Would always love to chat about sports, movies, TV shows, music, food, or fitness!
         </p>
         <div data-aos="fade-right" className="flex mt-8 gap-2">
           <div className="flex items-center justify-center">
