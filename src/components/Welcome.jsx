@@ -32,7 +32,7 @@ const Welcome = () => {
                             <a href="https://github.com/RyanL3i" target="_blank" className="text-teal-300 rounded-full glow p-2">
                                 <AiFillGithub className="text-[28px]" />
                             </a>
-                            <a href="https://www.linkedin.com/in/ryan-lei-a12835253/" target="_blank" className="text-teal-300 rounded-full glow p-2">
+                            <a href="https://www.linkedin.com/in/ryan-lei9/" target="_blank" className="text-teal-300 rounded-full glow p-2">
                                 <FaLinkedinIn className="text-[28px]" />
                             </a>
                             <a href="https://www.instagram.com/ryanl3i/" target="_blank" className="text-teal-300 rounded-full glow p-2">
