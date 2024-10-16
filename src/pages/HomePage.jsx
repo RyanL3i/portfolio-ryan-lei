@@ -10,7 +10,7 @@ import { useEffect } from 'react'
 
 const HomePage = () => {
   useEffect(() => {
-    document.title = 'Ryan Lei-Home';
+    document.title = 'Ryan Lei - CS & Economics at Northwestern University';
   }, []);
 
   return (
