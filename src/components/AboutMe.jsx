@@ -14,7 +14,7 @@ const AboutMe = () => {
         <div data-aos="fade-right" className="flex mt-8 gap-2">
           <div className="flex items-center justify-center">
             <div className="flex space-x-8">
-              <a href="https://firebasestorage.googleapis.com/v0/b/resume-4aaff.appspot.com/o/Resume%2FRyan_Lei__Resume.pdf?alt=media&token=ad73d2c4-f532-45e4-a943-34ac4563c403" target="_blank">
+              <a href="https://firebasestorage.googleapis.com/v0/b/resume-4aaff.appspot.com/o/Ryan_Lei__Resume.pdf?alt=media&token=95697a95-44a5-4bbf-8f3d-a312a0de90b8" target="_blank">
                 <button className="neon-button shadow-2xl hover:shadow-teal-300/50 text-white border-2 hover:bg-teal-300 hover:text-slate-800 border-teal-300
               rounded-lg py-4 px-8 uppercase relative overflow-hidden font-bold">Resume</button>
               </a>
