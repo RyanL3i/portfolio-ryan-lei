@@ -48,7 +48,7 @@ const Welcome = () => {
             </div>
             <div>
                 {/*<Gallery/>*/}
-                <img data-aos="fade-up" src={sidePiano} className="w-full max-w-[1000px] h-auto rounded-3xl border-2 border-teal-300 img_glow" alt="Display Photo: Me playing piano" />
+                <img data-aos="fade-up" src={sidePiano} width={350} height={350} className="h-auto rounded-3xl border-2 border-teal-300 img_glow" alt="Display Photo: Me playing piano" />
             </div>
         </div>
     )
